@@ -1,12 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Login_and_Get_inPutFile.Models;
+using Login_and_Get_inPutFile_2.Models;
 using System;
 
 
 
-namespace Login_and_Get_inPutFile.Controllers
+
+namespace Login_and_Get_inPutFile_2.Controllers
 {
-    public class PersonController : Controller
+    public class UsersController : Controller
     {
         public IActionResult Index()
         {
@@ -27,8 +28,8 @@ namespace Login_and_Get_inPutFile.Controllers
                 }
 
             }
-            Peaple.Add(model)
-            return View("TableUsers",Peaple);
+            Repository.Peaple.Add(model);
+            return View("TableUsers",Repository.Peaple);
         }
 
     }

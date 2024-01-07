@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Login_and_Get_inPutFile.Models
+namespace Login_and_Get_inPutFile_2.Models
 {
     public class PersonViewModel
     {
