@@ -1,4 +1,4 @@
-﻿@model Login_and_Get_inPutFile.Models.PersonViewModel;
+﻿@model Login_and_Get_inPutFile_2.Models.PersonViewModel;
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
@@ -41,16 +41,16 @@
 <h1>Person Registred</h1>
 
 <table class="table table-striped table-bordered">
-    <thead>
-        <td>Fullname</td>
-        <td>Email</td>
-        <td>Age</td>
-        <td>City Burn</td>
-        <td>About Self</td>
-        <td>Mobile</td>
-        <td>Password</td>
-        <td>Image</td>
-   </thead>
+    <tr>
+        <th>Fullname</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>City Burn</th>
+        <th>About Self</th>
+        <th>Mobile</th>
+        <th>Password</th>
+        <th>Image</th>
+   </tr>
    <tbody>
        <tr>
            <td>@Model.FullName</td>
@@ -60,7 +60,7 @@
            <td>@Model.Aboutself</td>
            <td>@Model.Mobile</td>
            <td>@Model.Password</td>
-            <td><img class="img-circle" <img src="data:Image/png;Base64,@Model.ImageName" style="width:50px;height:50px;border-radius:5px;" /> /></td>
+            <td><img class="img-circle" src="data:Image/png;Base64,@Model.ImageName" style="width:50px;height:50px;border-radius:5px;" /> </td>
        </tr>
    </tbody>
 </table>

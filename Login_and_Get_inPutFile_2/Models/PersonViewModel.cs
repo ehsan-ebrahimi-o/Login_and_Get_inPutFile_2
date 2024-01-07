@@ -22,5 +22,6 @@ namespace Login_and_Get_inPutFile_2.Models
         public IFormFile File { get; set; } = null!;
 
         public string ImageName { get; set; }
+        public string Hust { get; set; } = null!;
     }
 }
